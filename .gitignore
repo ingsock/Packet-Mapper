@@ -1,0 +1,9 @@
+# GeoIP database
+GeoLite2-City.mmdb
+
+# Documentation
+Geoip2.rst
+Scapy.md
+
+# Output files
+ip_heatmap.html

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Packet Route Mapper</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main id="map"></main>
+
+  <section class="panel panel-left">
+    <div class="title-row">
+      <h1>Packet Route Mapper</h1>
+      <span id="status-dot" class="status-dot"></span>
+    </div>
+
+    <div class="stats">
+      <div>
+        <span id="packet-count">0</span>
+        <label>packets</label>
+      </div>
+      <div>
+        <span id="geo-count">0</span>
+        <label>geo points</label>
+      </div>
+      <div>
+        <span id="trace-count">0</span>
+        <label>pending traces</label>
+      </div>
+    </div>
+
+    <label class="field-label" for="packet-select">Packet</label>
+    <select id="packet-select">
+      <option value="">Waiting for public IP packets</option>
+    </select>
+
+    <div id="packet-details" class="details">
+      Capture traffic with public IPs to populate routes.
+    </div>
+  </section>
+
+  <section class="panel panel-right">
+    <h2>Traffic</h2>
+    <div id="company-list" class="company-list"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>

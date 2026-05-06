@@ -1,6 +1,5 @@
-# Documentation
-Geoip2.rst
-Scapy.md
-
-# Output files
-ip_heatmap.html
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
